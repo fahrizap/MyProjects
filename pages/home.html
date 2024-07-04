@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= initial-scale=1.0" />
+    <title>Mersia</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="../assets/styles/0kontenPostingan.css" />
+    <link rel="stylesheet" href="../assets/styles/1header.css" />
+    <link rel="stylesheet" href="../assets/styles/2kontenKanan.css" />
+    <link rel="stylesheet" href="../assets/styles/3home.css" />
+    <link rel="stylesheet" href="../assets/styles/4kontenListTeman.css" />
+    <link rel="stylesheet" href="../assets/styles/5kontenListKomunitas.css" />
+    <link rel="stylesheet" href="../assets/styles/6kontenSave.css" />
+    <link rel="stylesheet" href="../assets/styles/7kontenBuatPost.css" />
+    <link rel="stylesheet" href="../assets/styles/8kontenPriKomunitas.css" />
+    <link rel="stylesheet" href="../assets/styles/9kontenPriTeman.css" />
+    <link rel="stylesheet" href="../assets/styles/10kontenPriProfil.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigasi atas -->
+    <header>
+      <!-- <div class="wellcome">
+        <h1>wellcome</h1>
+      </div> -->
+      <nav>
+        <!-- Logo -->
+        <img
+          src="../assets/img/mersia_text_blue.svg"
+          alt="mersia"
+          height="45px"
+        />
+        <!-- nav icon  -->
+        <div class="nav-header-icon-container">
+          <button class="nav-header-icon all-icons message" id="messageMenu">
+            <img src="../assets/svg/message.svg" style="width: 26px" />
+          </button>
+          <button
+            class="nav-header-icon all-icons notification"
+            id="notificationMenu"
+          >
+            <img src="../assets/svg/notification.svg" style="width: 36px" />
+          </button>
+          <button class="nav-header-icon all-icons profile" id="profileMenu">
+            <img src="../assets/svg/profile.svg" style="width: 28px" />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Menu navigasi sidebar -->
+      <div class="content sidebar-nav">
+        <div class="menu">
+          <!-- tombol home -->
+          <button class="menu-button active" id="homeMenu">
+            <div class="all-icons">
+              <img src="../assets/svg/home.svg" style="width: 24px" />
+            </div>
+            <p>Home</p>
+          </button>
+          <!-- tombol list teman -->
+          <button class="menu-button" id="friendMenu">
+            <div class="all-icons">
+              <img src="../assets/svg/friend.svg" />
+            </div>
+            <p>Teman</p>
+          </button>
+          <!-- tombol list komunitas -->
+          <button class="menu-button" id="communityMenu">
+            <div class="all-icons">
+              <img src="../assets/svg/community.svg" style="width: 22px" />
+            </div>
+            <p>Komunitas</p>
+          </button>
+          <!-- tombol save -->
+          <button class="menu-button" id="saveMenu">
+            <div class="all-icons">
+              <img src="../assets/svg/mark.svg" style="width: 20px" />
+            </div>
+            <p>Disimpan</p>
+          </button>
+          <!-- tombol posting -->
+          <button class="menu-button" id="postMenu">
+            <div class="all-icons">
+              <img src="../assets/svg/add.svg" />
+            </div>
+            <p>Posting</p>
+          </button>
+        </div>
+        <p class="header-list-com-friend">Komunitas</p>
+        <!-- tombol komunitas tunggal -->
+        <!-- priv-community untuk fungsi tombol -->
+        <div class="community-friend">
+          <button class="list-com-friend priv-community">
+            <div class="all-icons"></div>
+            <p>Hello</p>
+          </button>
+          <button class="list-com-friend priv-community">
+            <div class="all-icons"></div>
+            <p>Hello</p>
+          </button>
+          <button class="list-com-friend priv-community">
+            <div class="all-icons"></div>
+            <p>Hello</p>
+          </button>
+        </div>
+      </div>
+      <!-- konten postingan -->
+      <div class="content" id="postContent"></div>
+      <!-- konten list teman -->
+      <!-- friendContent untuk isian dari konten teman -->
+      <div class="content" id="friendContent">
+        <!-- usn = username -->
+        <div class="search-friend" id="cari-teman-usn">
+          <input type="text" placeholder="Cari teman" id="search-usn-input" />
+          <button type="submit" id="search-usn-button">
+            <img src="../assets/svg/search.svg" alt="search" />
+          </button>
+        </div>
+        <div id="search-result"></div>
+      </div>
+      <!-- konten list komunitas -->
+      <div class="content" id="communityContent">
+        <div class="search-community">
+          <input type="search" placeholder="Cari komunitas" />
+          <button><img src="../assets/svg/search.svg" alt="search" /></button>
+        </div>
+        <div class="container-community-list">
+          <div class="profile-community">
+            <div class="photo-community"></div>
+            <p class="name-community">Remaja Masjid Pecinta Tilawah</p>
+          </div>
+          <button class="join-community">Gabung</button>
+        </div>
+      </div>
+      <!-- konten postingan disimpan -->
+      <div class="content" id="saveContent">
+        <!-- <div class="post">
+          <div class="gambar-postingan">
+            <img src="../assets/img2/asep.png" alt="asep" />
+          </div>
+          <div class="status-postingan">
+            <div class="section-status">
+              <div class="foto-pengunggah"></div>
+              <p class="teks-status" style="font-weight: 500">Asep bawang</p>
+            </div>
+            <div class="section-status">
+              <button class="like-vote">
+                <img src="../assets/svg/like.svg" alt="like" />
+              </button>
+              <p class="teks-status">3999</p>
+              <button class="like-vote">
+                <img src="../assets/svg/upvote.svg" alt="upvote" />
+              </button>
+              <p class="teks-status">3220</p>
+              <button class="like-vote">
+                <img src="../assets/svg/downvote.svg" alt="downvote" />
+              </button>
+              <p class="teks-status">3550</p>
+              <button class="like-vote mark-icon">
+                <img
+                  src="../assets/svg/mark.svg"
+                  alt="mark"
+                  style="width: 14px"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="text-description-container">
+            <p class="text-description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+              placeat reiciendis maiores exercitationem natus aliquid animi ut,
+              quos mollitia quod laboriosam dolores commodi ullam. Sint deserunt
+              consequuntur architecto, aspernatur non eaque laborum cum unde
+              sed, vel dolores asperiores? Tempore culpa deleniti at repellendus
+              accusantium architecto eum eligendi, atque rem perferendis
+              molestias? Suscipit officia nemo sint velit necessitatibus
+              delectus molestiae assumenda exercitationem nostrum itaque?
+              Veniam, saepe eos cum inventore vitae quis laborum fugiat
+              voluptate exercitationem, ad perspiciatis sint impedit quasi
+              rerum? Doloremque rerum incidunt quisquam, delectus tenetur
+              ratione id ea aliquam quos illum voluptate iste expedita aliquid
+              consequuntur beatae error cupiditate!
+            </p>
+          </div>
+        </div> -->
+      </div>
+      <!-- konten buat postingan -->
+      <form class="content" id="createContent" enctype="multipart/form-data">
+        <div class="header-create-content">
+          <p>Buat postingan</p>
+        </div>
+        <div class="file-upload">
+          <label for="file-input" class="upload-image" name="image">
+            <img src="../assets/svg/add.svg" alt="add" />
+            <p id="file-name">Tidak ada gambar yang dipilih</p>
+          </label>
+          <input id="file-input" type="file" hidden required name="image" />
+        </div>
+        <div class="container-caption">
+          <p>Caption</p>
+          <textarea id="caption-input" required></textarea>
+        </div>
+        <div class="publish-container">
+          <button class="submit-button" id="submit-upload-post">Posting</button>
+        </div>
+      </form>
+      <!-- konten profil -->
+      <div class="content" id="profileContent">
+        <div class="photo-profile-container container-profile">
+          <div class="profile">
+            <div class="photo-profile"></div>
+            <p id="username-profile">Agus samsudin</p>
+          </div>
+          <label for="upload-profil">Ganti foto</label>
+          <input type="file" id="upload-profil" hidden />
+        </div>
+        <div class="username-email-input container-profile">
+          <div class="username-container">
+            <label for="username-input">Username</label>
+            <!-- <input type="text" id="username-input" /> -->
+            <div id="username-input"><p id="username-self"></p></div>
+          </div>
+          <div class="email-container">
+            <label for="email-input">Email</label>
+            <!-- <input type="text" id="email-input" /> -->
+            <div id="email-input"><p id="email-self"></p></div>
+          </div>
+        </div>
+        <div class="button-submit-container container-profile">
+          <button class="submit-change">Simpan perubahan</button>
+          <button
+            id="log-out"
+            class="submit"
+            style="margin-left: 15px; padding-block: 11px"
+          >
+            Log out
+          </button>
+        </div>
+      </div>
+      <!-- konten chat -->
+      <div
+        class="content"
+        id="messageContent"
+        style="background-color: black"
+      ></div>
+      <!-- konten notifikasi -->
+      <div
+        class="content"
+        id="notificationContent"
+        style="background-color: black"
+      ></div>
+      <!-- konten teman pribadi -->
+      <div class="content" id="privateFriendContent">
+        <div class="top-profile-container">
+          <div class="image-profile"></div>
+          <p>Agus samsudin</p>
+        </div>
+        <div class="center-status-container">
+          <div class="follow-like">
+            <p class="total">10</p>
+            <p class="name">Followers</p>
+          </div>
+          <div class="follow-like">
+            <p class="total">10</p>
+            <p class="name">Following</p>
+          </div>
+          <div class="follow-like">
+            <p class="total">10</p>
+            <p class="name">Like</p>
+          </div>
+        </div>
+      </div>
+      <!-- konten komunitas pribadi -->
+      <div
+        class="content"
+        id="privateCommunityContent"
+        style="background-color: black"
+      ></div>
+      <!-- konten bagian kanan -->
+      <div class="content content-right">
+        <div class="greeting-daily" id="rtc">
+          <p
+            class="greeting-message"
+            style="margin-bottom: 0px"
+            id="ucapan"
+          ></p>
+          <p
+            class="greeting-message"
+            id="hari"
+            style="font-size: 16px; margin-top: 10px"
+          ></p>
+        </div>
+        <p class="header-list-com-friend" style="margin-bottom: 10px">Teman</p>
+        <div class="community-friend" style="height: 47%">
+          <!-- tombol teman tunggal -->
+          <!-- priv-friend untuk fungsi tombol -->
+          <button class="list-com-friend priv-friend">
+            <div class="all-icons"></div>
+            <p>Hello</p>
+          </button>
+          <button class="list-com-friend priv-friend">
+            <div class="all-icons"></div>
+            <p>Hello</p>
+          </button>
+          <button class="list-com-friend priv-friend">
+            <div class="all-icons"></div>
+            <p>Hello</p>
+          </button>
+          <button class="list-com-friend priv-friend">
+            <div class="all-icons"></div>
+            <p>Hello</p>
+          </button>
+          <button class="list-com-friend priv-friend">
+            <div class="all-icons"></div>
+            <p>Hello</p>
+          </button>
+          <button class="list-com-friend priv-friend">
+            <div class="all-icons"></div>
+            <p>Hello</p>
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- Get postingan -->
+    <script>
+      function tampilkanPostingan() {
+        fetch("http://localhost:3000/posts")
+          .then((response) => response.json())
+          .then((data) => {
+            const postsContainer = document.getElementById("postContent");
+            if (data.success) {
+              let postsHTML = "";
+              data.posts.forEach((post) => {
+                postsHTML += `
+        <div class="post" id="postsContainer">     
+                <div class="gambar-postingan">
+            <img src="http://localhost:3000/${post.image_path}" alt="Gambar Postingan" />
+          </div>
+          <div class="status-postingan">
+            <div class="section-status">
+              <div class="foto-pengunggah"></div>
+              <p class="teks-status" style="font-weight: 500">${post.username}</p>
+            </div>
+            <div class="section-status">
+              <button class="like-vote">
+                <img src="../assets/svg/like.svg" alt="like" />
+              </button>
+              <p class="teks-status">0</p>
+              <button class="like-vote">
+                <img src="../assets/svg/upvote.svg" alt="upvote" />
+              </button>
+              <p class="teks-status">0</p>
+              <button class="like-vote">
+                <img src="../assets/svg/downvote.svg" alt="downvote" />
+              </button>
+              <p class="teks-status">0</p>
+              <button class="like-vote" style="padding-left: 7.5px">
+                <img
+                  src="../assets/svg/mark.svg"
+                  alt="mark"
+                  style="width: 14px"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="text-description-container">
+            <p class="text-description">
+              ${post.caption}
+            </p>
+          </div>
+          </div>`;
+              });
+              postsContainer.innerHTML = postsHTML;
+            } else {
+              postsContainer.innerHTML = `<p>${data.message}</p>`;
+            }
+          })
+          .catch((error) => {
+            console.error("Error: ", error);
+            document.getElementById("postContent").innerHTML =
+              "<p> Terjadi kesalahan pada server </p>";
+          });
+      }
+      window.onload = tampilkanPostingan;
+    </script>
+    <!-- Unggah postingan -->
+    <script>
+      const user = JSON.parse(localStorage.getItem("currentUser"));
+      document
+        .getElementById("createContent")
+        .addEventListener("submit", function () {
+          let formData = new FormData();
+
+          formData.append(
+            "caption",
+            document.getElementById("caption-input").value
+          );
+          formData.append("username", user.username);
+          formData.append(
+            "image",
+            document.getElementById("file-input").files[0]
+          );
+          fetch("http://localhost:3000/upload-post", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.success) {
+                alert("Postingan berhasil diunggah!");
+              } else {
+                alert("Terjadi kesalahan: " + data.message);
+              }
+            })
+            .catch((error) => {
+              console.error("Error: ", error);
+              alert("Postingan berhasil diunggah ");
+            });
+        });
+      document
+        .getElementById("file-input")
+        .addEventListener("change", function () {
+          const fileName = this.files[0].name;
+          document.getElementById("file-name").textContent = fileName;
+        });
+    </script>
+    <!-- Search user-->
+    <script>
+      document
+        .getElementById("search-usn-button")
+        .addEventListener("click", function () {
+          let searchUsername =
+            document.getElementById("search-usn-input").value;
+          fetch(
+            `http://localhost:3000/search?username=${encodeURIComponent(
+              searchUsername
+            )}`
+            // {
+            //   method: "GET",
+            //   headers: {
+            //     "Content-Type": "application/json",
+            //   },
+            // }
+          )
+            .then((response) => response.json())
+            .then((data) => {
+              const searchResultContainer =
+                document.getElementById("search-result");
+              if (data.success) {
+                if (data.users.length > 0) {
+                  let resultList = "";
+                  data.users.forEach((user) => {
+                    resultList += `  <div class="container-friend-list">
+                         <div class="profile-friend">
+                         <div class="photo-friend"></div>
+                         <p class="name-friend">${user.username}</p>
+                       </div>
+                     <button class="follow-friend-button">Follow</button>
+                   </div>`;
+                  });
+                  searchResultContainer.innerHTML = resultList;
+                } else {
+                  searchResultContainer.innerHTML =
+                    "<p>Tidak ada user ditemukan </p>";
+                }
+              } else {
+                searchResultContainer.innerHTML = `<p>Error: ${data.message}</p>`;
+              }
+            })
+            .catch((error) => {
+              console.error("Error: ", error);
+              document.getElementById("search-result").innerHTML =
+                "<p>Terjadi kesalahan pada server </p>";
+            });
+        });
+    </script>
+    <!-- Menu on -->
+    <script src="../script/menuAktif.js"></script>
+    <!-- widget kanan atas -->
+    <script src="../script/widgetKananAtas.js"></script>
+    <!-- active section -->
+    <script src="../script/kontenAktif.js"></script>
+    <!-- request users info -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const user = JSON.parse(localStorage.getItem("currentUser"));
+        if (user) {
+          document.getElementById("username-profile").textContent =
+            user.username;
+          document.getElementById("username-self").textContent = user.username;
+          document.getElementById("email-self").textContent = user.email;
+        } else {
+          alert("Data user gagal di request");
+        }
+      });
+    </script>
+    <!-- logout -->
+    <script>
+      document.getElementById("log-out").addEventListener("click", function () {
+        window.location.href = "login.html";
+      });
+    </script>
+  </body>
+</html>
