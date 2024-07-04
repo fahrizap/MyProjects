@@ -12,4 +12,18 @@ Website ini menggunakan HTML, CSS, dan Javascript untuk membangun sisi Front end
 
 ## 2 UI/UX
 ## 2.1 Home
+Pada tampilan utama terdapat 3 bagian
+- bagian kiri: sidebar, list komunitas
+- bagian tengah: konten utama (home) berisi postingan-postingan yang sudah diupload
+- bagian kanan: widget, list teman
 ![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-home.png)
+
+## 2.2 Cari teman
+![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-teman.png)
+## 2.3 Buat postingan
+![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-buat-postingan.png)
+## 2.4 Profil
+![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-profile.png)
+
+
+
