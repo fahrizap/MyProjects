@@ -1,0 +1,6 @@
+.section-status .mark-icon {
+  background-color: aqua;
+}
+.section-status .mark-icon:hover {
+  background-color: white;
+}

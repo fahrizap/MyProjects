@@ -1,0 +1,28 @@
+.content-right .greeting-daily {
+  width: 100%;
+  height: 34%;
+  background-color: white;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  background-size: cover;
+  padding-top: 1px;
+  padding-left: 15px;
+}
+.widgetBgMorning {
+  background-image: url(../img/pagi.png);
+}
+.widgetBgAfternoon {
+  background-image: url(../img/siang.png);
+}
+.widgetBgSunset {
+  background-image: url(../img/sore.png);
+}
+.widgetBgNight {
+  background-image: url(../img/malam.png);
+}
+.greeting-message {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+}

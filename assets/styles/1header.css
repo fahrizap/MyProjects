@@ -1,0 +1,35 @@
+header {
+  display: inline;
+}
+header .wellcome {
+  height: 660px;
+}
+.wellcome h1 {
+  margin-top: 0;
+}
+header nav {
+  display: flex;
+  top: 0;
+  position: sticky;
+  background-color: white;
+  padding-inline-start: 40px;
+  padding-inline-end: 50px;
+  padding-block: 15px;
+  justify-content: space-between;
+}
+nav .nav-header-icon-container {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  height: 40px;
+}
+.nav-header-icon-container .nav-header-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(218, 216, 216);
+  border: none;
+}
+.nav-header-icon-container .nav-header-icon:hover {
+  background-color: aqua;
+}

@@ -1,0 +1,144 @@
+#profileContent {
+  background-color: white;
+  box-sizing: border-box;
+  padding-block: 20px;
+}
+#profileContent .container-profile {
+  margin-inline: 4%;
+  width: 92%;
+  display: flex;
+  background-color: aqua;
+}
+#profileContent .photo-profile-container {
+  height: 14%;
+  border-radius: 14px;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10px;
+  border: 1px solid rgb(6, 150, 150);
+  margin-bottom: 15px;
+}
+.photo-profile-container .profile {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.photo-profile-container label[for*="load-pro"] {
+  background-color: white;
+  padding: 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid rgb(6, 150, 150);
+}
+.photo-profile-container label[for*="load-pro"]:active {
+  background-color: aqua;
+}
+.profile .photo-profile {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 25px;
+}
+.profile p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+#profileContent .username-email-input {
+  background-color: aqua;
+  border-radius: 14px;
+  height: 50%;
+  padding: 18px;
+  flex-direction: column;
+  row-gap: 50px;
+  border: 1px solid rgb(6, 150, 150);
+}
+.username-email-input .username-container {
+  display: flex;
+  flex-direction: column;
+}
+.username-container div {
+  width: 80%;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid black;
+  padding-inline: 10px;
+  background-color: aqua;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.username-container div p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: darkblue;
+}
+.username-email-input .email-container {
+  display: flex;
+  flex-direction: column;
+}
+.email-container div {
+  width: 80%;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid black;
+  padding-inline: 10px;
+  background-color: aqua;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.email-container div p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: darkblue;
+}
+.username-email-input label[for*="-input"] {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.username-email-input input[id*="-input"] {
+  width: 80%;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid black;
+  padding-inline: 10px;
+  background-color: aqua;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.username-email-input input[id*="-input"]:focus {
+  border-color: whitesmoke;
+}
+
+#profileContent .button-submit-container {
+  justify-content: end;
+  background-color: white;
+  margin-top: 15px;
+}
+.button-submit-container button {
+  border-radius: 4px;
+  border: 1px solid rgb(6, 150, 150);
+  background-color: aqua;
+  width: 100px;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.button-submit-container button:active {
+  background-color: white;
+  color: aqua;
+}

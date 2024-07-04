@@ -1,0 +1,75 @@
+.post {
+  background-color: white;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 610px;
+  border-radius: 15px;
+  padding: 15px;
+}
+.post .gambar-postingan {
+  height: 65%;
+  border-radius: 12px;
+  /* tidak ada element child yang keluar */
+  overflow: hidden;
+}
+.gambar-postingan img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.post .status-postingan {
+  margin-top: 3px;
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+  justify-content: space-between;
+}
+.status-postingan .section-status {
+  display: flex;
+  column-gap: 8px;
+}
+.foto-pengunggah {
+  border: black solid 1px;
+  width: 35px;
+  height: 35px;
+  border-radius: 18px;
+}
+.teks-status {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  align-self: center;
+  font-family: "Roboto", sans-serif;
+}
+.status-postingan img {
+  width: 18px;
+  height: 18px;
+}
+.status-postingan .like-vote {
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  border: 1px black solid;
+  background: none;
+}
+.status-postingan .like-vote:hover {
+  background-color: aqua;
+}
+.post .text-description-container {
+  margin-top: 8px;
+  height: 23%;
+  width: 100%;
+  overflow: auto;
+  padding-inline: 10px;
+}
+.text-description-container .text-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-block: 0px;
+}

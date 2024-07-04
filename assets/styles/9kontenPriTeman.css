@@ -1,0 +1,49 @@
+#privateFriendContent {
+  background-color: white;
+}
+#privateFriendContent .top-profile-container {
+  background-color: aqua;
+  width: 100%;
+  height: 60%;
+  border-end-end-radius: 55px;
+  border-end-start-radius: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#privateFriendContent .image-profile {
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  border-radius: 60px;
+}
+.top-profile-container p {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+#privateFriendContent .center-status-container {
+  width: 100%;
+  height: 20%;
+  justify-content: space-evenly;
+  display: flex;
+}
+.center-status-container .follow-like {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.follow-like .total {
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.follow-like .name {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,120 @@
+/* "Poppins", sans-serif */
+/* font-family: "Roboto", sans-serif; */
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  font-family: "Roboto", sans-serif;
+}
+.hidden {
+  display: none;
+}
+/* Body */
+body {
+  margin: 0;
+}
+.all-icons {
+  border-radius: 18px;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.all-icons img {
+  width: 26px;
+  border-radius: 2px;
+}
+main {
+  height: 575px;
+  display: flex;
+  column-gap: 70px;
+  background-color: rgb(218, 216, 216);
+  padding: 20px 25px;
+}
+main .content {
+  height: 530px;
+  border-radius: 15px;
+  flex: 2;
+  overflow: auto;
+}
+/* konten utama kiri */
+main .sidebar-nav {
+  flex: 1;
+  border-radius: 8px;
+}
+/* konten utama kanan */
+main .content-right {
+  flex: 1;
+  padding-left: 10px;
+}
+/* bagian atas sidebar (menu)*/
+.sidebar-nav .menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-bottom: 30px;
+}
+/* bagian bawah sidebar dan bawah konten kanan (list komunitas dan list teman) */
+.content .community-friend {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  overflow: auto;
+  height: 37%;
+}
+/* tombol menu */
+.sidebar-nav .menu-button {
+  display: flex;
+  color: black;
+  border-radius: 8px;
+  height: 45px;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+  gap: 15px;
+  background: none;
+  border: none;
+}
+.menu-button.active {
+  background-color: aqua;
+}
+.menu-button p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.header-list-com-friend {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+/* kontainer per masing masing list komunitas dan teman */
+.list-com-friend {
+  display: flex;
+  color: black;
+  border-radius: 8px;
+  height: 45px;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+  gap: 15px;
+  background: none;
+  border: none;
+}
+.list-com-friend:hover {
+  background-color: aqua;
+}
+.list-com-friend p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+/* untuk menghilangkan scroll bar */
+::-webkit-scrollbar {
+  display: none;
+}
