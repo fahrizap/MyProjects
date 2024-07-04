@@ -11,22 +11,30 @@ Website ini menggunakan HTML, CSS, dan Javascript untuk membangun sisi Front end
 - Tujuan: Membangun sebuah media yang dapat menginspirasi dan mengapresiasi orang-orang.
 
 ## 2 UI/UX
-## 2.1 Home
+## 2.1 Register
+Membuat akun baru menggunakan email, password, dan username kemudian POST data ke server
+![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/register.png)
+
+## 2.2 Login
+Masuk ke akun yang sudah ada sebelumnya
+![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/login.png)
+
+## 2.3 Home
 Pada tampilan utama terdapat 3 bagian
 - bagian kiri: sidebar, list komunitas
 - bagian tengah: konten utama (home) berisi postingan-postingan yang sudah diupload
 - bagian kanan: widget, list teman
 ![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-home.png)
 
-## 2.2 Cari teman
-Menggunakan perintah select * like "?" parameter like tersebut berasal dari input
+## 2.4 Cari teman
+Menggunakan perintah query ke database mencari akun yang usernamenya mengangung huruf dari input
 ![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-teman.png)
 
-## 2.3 Buat postingan
+## 2.5 Buat postingan
 mengupload (POST) postingan dan postingan tersebut akan di GET kembali di home
 ![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-buat-postingan.png)
 
-## 2.4 Profil
+## 2.6 Profil
 Berisi informasi akun login
 ![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-profil.png)
 
