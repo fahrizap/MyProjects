@@ -19,11 +19,16 @@ Pada tampilan utama terdapat 3 bagian
 ![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-home.png)
 
 ## 2.2 Cari teman
+Menggunakan perintah select * like "?" parameter like tersebut berasal dari input
 ![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-teman.png)
+
 ## 2.3 Buat postingan
+mengupload (POST) postingan dan postingan tersebut akan di GET kembali di home
 ![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-buat-postingan.png)
+
 ## 2.4 Profil
-![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-profile.png)
+Berisi informasi akun login
+![Contoh](https://github.com/fahrizap/MyProjects/blob/main/ui-ux/content-profil.png)
 
 
 
