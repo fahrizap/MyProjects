@@ -12,4 +12,4 @@ Website ini menggunakan HTML, CSS, dan Javascript untuk membangun sisi Front end
 
 ## 2 UI/UX
 ## 2.1 Home
-![Contoh](https://github.com/fahrizap/Myprojects/UI)
+![Contoh](https://github.com/fahrizap/Myprojects/UI Mersia/content-home.png)
