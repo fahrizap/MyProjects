@@ -9,3 +9,7 @@ Website ini menggunakan HTML, CSS, dan Javascript untuk membangun sisi Front end
 - Nama: Mersia
 - Singkatan: Media Apresiasi Indonesia
 - Tujuan: Membangun sebuah media yang dapat menginspirasi dan mengapresiasi orang-orang.
+
+## 2 UI/UX
+## 2.1 Home
+![Contoh](https://github.com/fahrizap/Myprojects/UI)
