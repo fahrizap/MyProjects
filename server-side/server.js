@@ -8,7 +8,7 @@ const formidable = require("formidable");
 const database = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "BlueIce344.",
+  password: "**********",
   database: "firstWebDatabase",
 });
 
